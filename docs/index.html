@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>MultipleListRandomGenerator</title>
+	<meta name="description" content="MultipleListRandomGenerator">
+	<meta name="author" content="MathieuL">
+
+	<link rel="stylesheet" href="css/styles.css?v=1.0"/>
+	<script type="text/javascript" src="js/utilities.js"></script>
+	<script type="text/javascript" src="js/ParametersContainer.js"></script>
+	<script type="text/javascript" src="js/DomElementsContainer.js"></script>
+	<script type="text/javascript" src="js/mainScript.js"></script>
+</head>
+
+<body  onload="onBodyLoad()">
+	<div id="textareaContainer">
+	</div>
+	<div id="buttonContainer">
+		<button onclick="generateButtonTrigger()">Generate</button>
+		<button onclick="resetButtonTrigger()">Reset</button>
+		<button onclick="addListButtonTrigger()">Add List</button>
+		<button onclick="removeListButtonTrigger()">Remove List</button>
+		<br>
+		<label for="timerDuration" id="paramName">Timer duration (ms) :</label>
+		<input type="text" id="timerDuration" name="timerDuration" maxlength="5" size="3">
+		<button onclick="startTimerTrigger()">Start</button>
+		<button onclick="stopTimerTrigger()">Stop</button>
+	</div>
+	<div id="result">
+	</div>
+</body>
+</html>
